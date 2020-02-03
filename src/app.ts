@@ -11,5 +11,5 @@ app.use(express.urlencoded({ limit: "10mb", extended: true }));
 app.use(helmet());
 app.use(morgan("tiny"));
 
-app.use([userRoutes]);
+app.use("/api/v1/", [userRoutes]);
 export default app;

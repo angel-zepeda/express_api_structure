@@ -1,6 +1,6 @@
-import { Client } from "pg";
+import { Pool } from "pg";
 
-export const client = new Client({
+export const pool = new Pool({
   host: "localhost",
   user: "angelzepeda",
   password: "angelzepeda",

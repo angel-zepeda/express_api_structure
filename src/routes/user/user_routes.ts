@@ -1,7 +1,7 @@
 import expres from "express";
-import { getUsers, getOneuser } from "../../controllers";
+import { getUsers, createUser } from "../../controllers";
 
 export const userRoutes = expres();
 
 userRoutes.get("/", getUsers);
-userRoutes.get("/usuario", getOneuser);
+userRoutes.post("/users", createUser);
